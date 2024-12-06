@@ -31,7 +31,7 @@ function Home() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:5000/api/rooms/getallrooms');
+        const response = await axios.get('https://hotel-backend-obj9.onrender.com/api/rooms/getallrooms');
         console.log(response.data);  // Log the data
         setrooms(response.data);
         setduplicaterooms(response.data)
